@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Description>Библиотека классов ГИС ГМП версия 2.1</Description>
+    <Authors>КБА</Authors>
+    <Company>МКУ УИТС г. Сургута</Company>
+    <Copyright />
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/MrGreen-git/GisGmp</RepositoryUrl>
+    <PackageTags>ГИС ГМП</PackageTags>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\kondyuba_ba\source\repos\GisGmp\GisGmp\GisGmp.xml</DocumentationFile>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+</Project>
