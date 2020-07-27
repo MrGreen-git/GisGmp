@@ -14,8 +14,9 @@ namespace GisGmp.SearchConditions
         protected PaymentsConditionsType() { }
 
         public PaymentsConditionsType(string[] uip) => PaymentId = uip;
+
         /// <summary>
-        /// УИП
+        /// УИП [maxOccurs="100"]
         /// </summary>
         [XmlElement("PaymentId", Order = 1)]
         public string[] PaymentId { get; set; }

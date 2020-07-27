@@ -5,7 +5,7 @@ using System.Xml.Serialization;
 namespace GisGmp.Services.ImportCharges
 {
     [Serializable()]
-    [XmlRoot("ImportChargesResponse", Namespace = "urn://roskazna.ru/gisgmp/xsd/services/import-charges/2.1.1")]
+    [XmlRoot("ImportChargesResponse", Namespace = "urn://roskazna.ru/gisgmp/xsd/services/import-charges/2.1.1", IsNullable = false)]
     public class ImportChargesResponse : ImportPackageResponseType
     {
         protected ImportChargesResponse() 

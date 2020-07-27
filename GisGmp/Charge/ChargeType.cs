@@ -57,7 +57,7 @@ namespace GisGmp.Charge
         /// <summary>
         /// Поле номер 1001: Дата, вплоть до которой актуально выставленное начисление
         /// </summary>
-        [XmlAttribute("validUntil")]
+        [XmlAttribute("validUntil", DataType = "date")]
         public DateTime ValidUntil { get; set; }
         
         /// <summary/>

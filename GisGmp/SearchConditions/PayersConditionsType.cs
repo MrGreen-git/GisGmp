@@ -13,15 +13,16 @@ namespace GisGmp.SearchConditions
     {
         protected PayersConditionsType() { }
 
-        public PayersConditionsType(string[] items, ItemsChoiceType[] itemsElementName, string[] kbklist)
+        public PayersConditionsType(string[] items, ItemsChoiceType[] itemsElementName, TimeIntervalType timeInterval = null, string[] kbklist = null)
         {
             Items = items;
             ItemsElementName = itemsElementName;
+            TimeInterval = timeInterval;
             KBKlist = kbklist;
         }
 
         /// <summary>
-        /// Идентификатор плательщика
+        /// Идентификатор плательщика [maxOccurs="100"]
         /// </summary>
         [XmlElement("PayerIdentifier", typeof(string), Order = 1)]
         [XmlElement("PayerInn", typeof(string), Order = 1)]
@@ -33,14 +34,13 @@ namespace GisGmp.SearchConditions
         public ItemsChoiceType[] ItemsElementName { get; set; }
 
         /// <summary>
-        /// Временной интервал, за который запрашивается информация из ГИС ГМП
+        /// Временной интервал, за который запрашивается информация из ГИС ГМП [maxOccurs="0"]
         /// </summary>
         [XmlElement("TimeInterval", Order = 2, Namespace = "http://roskazna.ru/gisgmp/xsd/Common/2.1.1")]
         public TimeIntervalType TimeInterval { get; set; }
 
-        //TODO Разобраться
         /// <summary>
-        /// Перечень КБК
+        /// Перечень КБК [minOccurs="0"]
         /// </summary>
         [XmlArray(Order = 3, Namespace = "http://roskazna.ru/gisgmp/xsd/Common/2.1.1")]
         [XmlArrayItem("KBK", IsNullable = false)]

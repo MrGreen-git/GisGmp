@@ -7,7 +7,7 @@ namespace GisGmp.Common
     /// Результат обработки сущности в пакете
     /// </summary>
     [Serializable()]
-    [XmlRoot("ImportProtocolType", Namespace = "http://roskazna.ru/gisgmp/xsd/Common/2.1.1")]
+    [XmlRoot(Namespace = "http://roskazna.ru/gisgmp/xsd/Common/2.1.1")]
     public class ImportProtocolType
     {
         protected ImportProtocolType() { }

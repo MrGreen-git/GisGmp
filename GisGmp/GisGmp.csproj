@@ -1,22 +1,48 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <Description>Библиотека классов ГИС ГМП версия 2.1</Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.0.2</Version>
     <Authors>КБА</Authors>
     <Company>МКУ УИТС г. Сургута</Company>
-    <Copyright />
+    <Description>Библиотека классов ГИС ГМП версия 2.1</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/MrGreen-git/GisGmp</RepositoryUrl>
     <PackageTags>ГИС ГМП</PackageTags>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <Version>1.0.1</Version>
+    <NeutralLanguage>ru-RU</NeutralLanguage>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\kondyuba_ba\source\repos\GisGmp\GisGmp\GisGmp.xml</DocumentationFile>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>GisGmp.xml</DocumentationFile>
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Charge\" />
+    <Folder Include="Common\" />
+    <Folder Include="Organization\" />
+    <Folder Include="Package\" />
+    <Folder Include="Quittance\" />
+    <Folder Include="Payment\" />
+    <Folder Include="Refund\" />
+    <Folder Include="SearchConditions\" />
+    <Folder Include="Services\ExportCharges\" />
+    <Folder Include="Services\ExportNotice\" />
+    <Folder Include="Services\ExportPayments\" />
+    <Folder Include="Services\ExportQuittances\" />
+    <Folder Include="Services\ExportRefunds\" />
+    <Folder Include="Services\ForcedAcknowledgement\" />
+    <Folder Include="Services\ImportCertificates\" />
+    <Folder Include="Services\ImportCharges\" />
+    <Folder Include="Services\ImportChargesTemplate\" />
+    <Folder Include="Services\ImportPayments\" />
+    <Folder Include="Services\ImportRefunds\" />
+    <Folder Include="Services\SubscriptionService\" />
+    <Folder Include="Service\Type\Support\" />
+    <Folder Include="Service\XmlSerializer\" />
+    <Folder Include="Subscription\" />
+  </ItemGroup>
 
 </Project>

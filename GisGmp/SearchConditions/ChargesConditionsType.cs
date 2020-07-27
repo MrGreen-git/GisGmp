@@ -13,15 +13,19 @@ namespace GisGmp.SearchConditions
     {
         protected ChargesConditionsType() { }
 
-        public ChargesConditionsType(string[] supplierBillID) => SupplierBillID = supplierBillID;
+        public ChargesConditionsType(string[] supplierBillID, TimeIntervalType timeInterval = null)
+        {
+            SupplierBillID = supplierBillID;
+            TimeInterval = timeInterval;
+        }
         /// <summary>
-        /// УИН
+        /// УИН [maxOccurs="100"]
         /// </summary>
         [XmlElement("SupplierBillID", Order = 1)]
         public string[] SupplierBillID { get; set; }
 
         /// <summary>
-        /// Временной интервал, за который запрашивается информация из ГИС ГМП
+        /// Временной интервал, за который запрашивается информация из ГИС ГМП [minOccurs="0"]
         /// </summary>
         [XmlElement("TimeInterval", Order = 2, Namespace = "http://roskazna.ru/gisgmp/xsd/Common/2.1.1")]
         public TimeIntervalType TimeInterval { get; set; }

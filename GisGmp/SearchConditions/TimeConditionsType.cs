@@ -13,7 +13,16 @@ namespace GisGmp.SearchConditions
     {
         protected TimeConditionsType() { }
 
-        public TimeConditionsType(TimeIntervalType timeInterval) => TimeInterval = timeInterval;
+        public TimeConditionsType(
+            TimeIntervalType timeInterval,
+            Beneficiary[] beneficiary = null,
+            string[] kbkList = null
+            )
+        {
+            TimeInterval = timeInterval;
+            Beneficiary = beneficiary;
+            KBKlist = kbkList;
+        }
         /// <summary>
         /// Временной интервал, за который запрашивается информация из ГИС ГМП
         /// </summary>
@@ -21,13 +30,13 @@ namespace GisGmp.SearchConditions
         public TimeIntervalType TimeInterval { get; set; }
 
         /// <summary>
-        /// Идентификация получателя средств
+        /// Идентификация получателя средств [maxOccurs="10" minOccurs="0"]
         /// </summary>
         [XmlElement("Beneficiary", Order = 2)]
         public Beneficiary[] Beneficiary { get; set; }
 
         /// <summary>
-        /// Перечень КБК
+        /// Перечень КБК [minOccurs="0"]
         /// </summary>
         [XmlArray("KBKlist", Order = 3,  Namespace = "http://roskazna.ru/gisgmp/xsd/Common/2.1.1")]
         [XmlArrayItem("KBK", IsNullable = false)]

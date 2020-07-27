@@ -14,7 +14,7 @@ namespace GisGmp.SearchConditions
 
         public RefundsConditionsType(string[] uir) => RefundId = uir;
         /// <summary>
-        /// УИВ
+        /// УИВ [maxOccurs="100"]
         /// </summary>
         [XmlElement("RefundId", Order = 1)]
         public string[] RefundId { get; set; }

@@ -766,9 +766,7 @@
             </summary>
         </member>
         <member name="P:GisGmp.Common.ImportPackageResponseType.ImportProtocol">
-            <summary>
-            Результат обработки сущности в пакете
-            </summary>
+            <remarks/>
         </member>
         <member name="T:GisGmp.Common.ImportProtocolType">
             <summary>
@@ -1756,12 +1754,12 @@
         </member>
         <member name="P:GisGmp.SearchConditions.ChargesConditionsType.SupplierBillID">
             <summary>
-            УИН
+            УИН [maxOccurs="100"]
             </summary>
         </member>
         <member name="P:GisGmp.SearchConditions.ChargesConditionsType.TimeInterval">
             <summary>
-            Временной интервал, за который запрашивается информация из ГИС ГМП
+            Временной интервал, за который запрашивается информация из ГИС ГМП [minOccurs="0"]
             </summary>
         </member>
         <member name="T:GisGmp.SearchConditions.ChargesExportConditions">
@@ -1956,7 +1954,7 @@
         </member>
         <member name="P:GisGmp.SearchConditions.PayersConditionsType.Items">
             <summary>
-            Идентификатор плательщика
+            Идентификатор плательщика [maxOccurs="100"]
             </summary>
         </member>
         <member name="P:GisGmp.SearchConditions.PayersConditionsType.ItemsElementName">
@@ -1964,12 +1962,12 @@
         </member>
         <member name="P:GisGmp.SearchConditions.PayersConditionsType.TimeInterval">
             <summary>
-            Временной интервал, за который запрашивается информация из ГИС ГМП
+            Временной интервал, за который запрашивается информация из ГИС ГМП [maxOccurs="0"]
             </summary>
         </member>
         <member name="P:GisGmp.SearchConditions.PayersConditionsType.KBKlist">
             <summary>
-            Перечень КБК
+            Перечень КБК [minOccurs="0"]
             </summary>
         </member>
         <member name="T:GisGmp.SearchConditions.PaymentsConditionsType">
@@ -1979,7 +1977,7 @@
         </member>
         <member name="P:GisGmp.SearchConditions.PaymentsConditionsType.PaymentId">
             <summary>
-            УИП
+            УИП [maxOccurs="100"]
             </summary>
         </member>
         <member name="T:GisGmp.SearchConditions.PaymentsExportConditions">
@@ -1999,7 +1997,7 @@
         </member>
         <member name="P:GisGmp.SearchConditions.RefundsConditionsType.RefundId">
             <summary>
-            УИВ
+            УИВ [maxOccurs="100"]
             </summary>
         </member>
         <member name="T:GisGmp.SearchConditions.RefundsExportConditions">
@@ -2019,12 +2017,12 @@
         </member>
         <member name="P:GisGmp.SearchConditions.TimeConditionsType.Beneficiary">
             <summary>
-            Идентификация получателя средств
+            Идентификация получателя средств [maxOccurs="10" minOccurs="0"]
             </summary>
         </member>
         <member name="P:GisGmp.SearchConditions.TimeConditionsType.KBKlist">
             <summary>
-            Перечень КБК
+            Перечень КБК [minOccurs="0"]
             </summary>
         </member>
         <member name="T:GisGmp.Services.ExportCharges.ChargeInfo">
@@ -2766,6 +2764,72 @@
             <summary>
             Описание типа уведомления
             </summary>
+        </member>
+        <member name="M:GisGmp.Service.GISGMP_Dll.ExportCharges(GisGmp.SearchConditions.ExportChargesKind,GisGmp.Service.UIN[],GisGmp.Common.TimeIntervalType)">
+            <summary>
+            Запрос на предоставление необходимой для уплаты информации (начисления)
+            </summary>
+            <param name="chargesKind">Тип запроса на предоставление информации</param>
+            <param name="uin">УИН (кол-во объектов 1-100)</param>
+            <param name="timeInterval">Временной интервал, за который запрашивается информация</param>
+            <returns>MessageId СМЭВ</returns>
+        </member>
+        <member name="M:GisGmp.Service.GISGMP_Dll.ExportCharges(GisGmp.SearchConditions.ExportChargesKind,GisGmp.Service.IPayerInnOrId[],GisGmp.Common.TimeIntervalType,GisGmp.Service.KBK[])">
+            <summary>
+            Запрос на предоставление необходимой для уплаты информации (начисления)
+            </summary>
+            <param name="chargesKind">Тип запроса на предоставление информации</param>
+            <param name="payerInnOrId">Идентификатор плательщика (кол-во объектов 1-100)</param>
+            <param name="timeInterval">Временной интервал, за который запрашивается информация</param>
+            <param name="kbk">КБК (кол-во объектов null, 1-10)</param>
+            <returns>MessageId СМЭВ</returns>
+        </member>
+        <member name="M:GisGmp.Service.GISGMP_Dll.ExportCharges(GisGmp.SearchConditions.ExportChargesKind,GisGmp.Common.TimeIntervalType,GisGmp.SearchConditions.Beneficiary[],GisGmp.Service.KBK[])">
+            <summary>
+            Запрос на предоставление необходимой для уплаты информации (начисления)
+            </summary>
+            <param name="chargesKind">Тип запроса на предоставление информации</param>
+            <param name="timeInterval">Временной интервал, за который запрашивается информация</param>
+            <param name="beneficiary">ИНН и КПП получателя средств (кол-во объектов null, 1-10)</param>
+            <param name="kbk">КБК (кол-во объектов null, 1-10)</param>
+            <returns>MessageId СМЭВ</returns>
+        </member>
+        <member name="M:GisGmp.Service.GISGMP_Dll.ExportPayments(GisGmp.SearchConditions.ExportPaymentsKind,GisGmp.Service.UIN[],GisGmp.Common.TimeIntervalType)">
+            <summary>
+            Запрос на предоставление информации об уплате
+            </summary>
+            <param name="paymentsKind">Тип запроса на предоставление информации</param>
+            <param name="uin">УИН (кол-во объектов 1-100)</param>
+            <param name="timeInterval">Временной интервал, за который запрашивается информация</param>
+            <returns>MessageId СМЭВ</returns>
+        </member>
+        <member name="M:GisGmp.Service.GISGMP_Dll.ExportPayments(GisGmp.SearchConditions.ExportPaymentsKind,GisGmp.Service.IPayerInnOrId[],GisGmp.Common.TimeIntervalType,GisGmp.Service.KBK[])">
+            <summary>
+            Запрос на предоставление информации об уплате
+            </summary>
+            <param name="paymentsKind">Тип запроса на предоставление информации</param>
+            <param name="payerInnOrId">Идентификатор плательщика (кол-во объектов 1-100)</param>
+            <param name="timeInterval">Временной интервал, за который запрашивается информация</param>
+            <param name="kbk">КБК (кол-во объектов null, 1-10)</param>
+            <returns>MessageId СМЭВ</returns>
+        </member>
+        <member name="M:GisGmp.Service.GISGMP_Dll.ExportPayments(GisGmp.SearchConditions.ExportPaymentsKind,GisGmp.Service.UIP[])">
+            <summary>
+            Запрос на предоставление информации об уплате
+            </summary>
+            <param name="paymentsKind">Тип запроса на предоставление информации</param>
+            <param name="uip">УИП (кол-во объектов 1-100)</param>
+            <returns>MessageId СМЭВ</returns>
+        </member>
+        <member name="M:GisGmp.Service.GISGMP_Dll.ExportPayments(GisGmp.SearchConditions.ExportPaymentsKind,GisGmp.Common.TimeIntervalType,GisGmp.SearchConditions.Beneficiary[],GisGmp.Service.KBK[])">
+            <summary>
+            Запрос на предоставление информации об уплате
+            </summary>
+            <param name="paymentsKind">Тип запроса на предоставление информации</param>
+            <param name="timeInterval">Временной интервал, за который запрашивается информация</param>
+            <param name="beneficiary">ИНН и КПП получателя средств (кол-во объектов null, 1-10)</param>
+            <param name="kbk">КБК (кол-во объектов null, 1-10)</param>
+            <returns>MessageId СМЭВ</returns>
         </member>
         <member name="T:GisGmp.Subscription.ParameterValue">
             <summary>
