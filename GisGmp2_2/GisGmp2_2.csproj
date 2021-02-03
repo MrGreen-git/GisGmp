@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>GisGmp</RootNamespace>
+    <PackageId>GisGmp</PackageId>
+    <Authors>КБА</Authors>
+    <Product>GisGmp</Product>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Библиотека классов ГИС ГМП версия 2.2.0</Description>
+    <Version>2.2.1</Version>
+    <Company>МКУ УИТС г. Сургута</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/MrGreen-git/GisGmp</RepositoryUrl>
+    <PackageTags>ГИС ГМП</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <AssemblyName>GisGmp</AssemblyName>
+    <AssemblyVersion>2.2.1.0</AssemblyVersion>
+    <FileVersion>2.2.1.0</FileVersion>
+    <OutputType>Exe</OutputType>
+    <NeutralLanguage>ru-RU</NeutralLanguage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>GisGmp.xml</DocumentationFile>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+</Project>

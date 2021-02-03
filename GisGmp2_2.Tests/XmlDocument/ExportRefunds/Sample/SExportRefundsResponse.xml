@@ -1,0 +1,15 @@
+<ns0:ExportRefundsResponse xmlns:com="http://roskazna.ru/gisgmp/xsd/Common/2.2.0" xmlns:sc="http://roskazna.ru/gisgmp/xsd/SearchConditions/2.2.0" xmlns:org="http://roskazna.ru/gisgmp/xsd/Organization/2.2.0" xmlns:rf="http://roskazna.ru/gisgmp/xsd/Refund/2.2.0" xmlns:ns0="urn://roskazna.ru/gisgmp/xsd/services/export-refunds/2.2.0" hasMore="false" Id="I_cf6899af-40c2-4e48-8f62-d666a6b4f63c" RqId="G_98c04cf8-d42a-4b60-a288-b62d86f4dba5" recipientIdentifier="3eb551" timestamp="2020-09-30T18:13:51">
+	<ns0:Refund refundId="0410964930092020000000013" refundDocDate="2020-09-30T14:06:30.313+05:00" budgetLevel="1" kbk="18811630020016000140" oktmo="45381000">
+		<org:RefundPayer codeUBP="28519" name="Тестовый участник" inn="7706012716" kpp="770901011"/>
+		<rf:RefundApplication appNum="987894" appDate="2020-09-30" paymentId="10471020010005233009202000000012" cashType="1" amount="300000" purpose="Штраф за нарушение ПДД (ТЕСТОВЫЕ ДАННЫЕ!)"/>
+		<rf:RefundBasis docKind="Заявление" docNumber="331254" docDate="2020-09-30"/>
+		<rf:RefundPayee payerIdentifier="1220000000005512349832" name="Тестовый получатель">
+			<rf:BankAccountNumber>
+				<com:Bank bik="044552272"/>
+			</rf:BankAccountNumber>
+		</rf:RefundPayee>
+		<com:ChangeStatusInfo>
+		    <com:Meaning>1</com:Meaning>
+		</com:ChangeStatusInfo> 
+	</ns0:Refund>
+</ns0:ExportRefundsResponse>

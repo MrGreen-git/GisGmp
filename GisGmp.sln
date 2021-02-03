@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GisGmp", "GisGmp\GisGmp.csproj", "{2193E882-04C9-4AEA-90A9-53E4D4D7AB24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GisGmp2_2", "GisGmp2_2\GisGmp2_2.csproj", "{988CC194-CFDC-4D41-A1E9-C3500B7D97D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GisGmp2_2.Tests", "GisGmp2_2.Tests\GisGmp2_2.Tests.csproj", "{2B94EF67-15E0-464B-872C-9AAD604C0B5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2193E882-04C9-4AEA-90A9-53E4D4D7AB24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2193E882-04C9-4AEA-90A9-53E4D4D7AB24}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2193E882-04C9-4AEA-90A9-53E4D4D7AB24}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2193E882-04C9-4AEA-90A9-53E4D4D7AB24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{988CC194-CFDC-4D41-A1E9-C3500B7D97D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988CC194-CFDC-4D41-A1E9-C3500B7D97D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988CC194-CFDC-4D41-A1E9-C3500B7D97D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{988CC194-CFDC-4D41-A1E9-C3500B7D97D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B94EF67-15E0-464B-872C-9AAD604C0B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B94EF67-15E0-464B-872C-9AAD604C0B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B94EF67-15E0-464B-872C-9AAD604C0B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B94EF67-15E0-464B-872C-9AAD604C0B5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

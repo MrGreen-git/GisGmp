@@ -1,0 +1,3 @@
+<ic:ImportCertificateRequest xmlns:com="http://roskazna.ru/gisgmp/xsd/Common/2.2.0" xmlns:ic="urn://roskazna.ru/gisgmp/xsd/services/import-certificates/2.2.0" Id="I_6e188de4-8491-49ea-8ec6-a09a607d020a" timestamp="2020-09-30T18:13:51" senderIdentifier="3eb551" senderRole="3">
+	<ic:RequestEntry Id="I_6e188de4-8491-49ea-8ec6-a09a607d020a" ownership="3eb551"/>
+</ic:ImportCertificateRequest>

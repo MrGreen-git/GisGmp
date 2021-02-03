@@ -1,0 +1,19 @@
+<nt:ExportNoticeRequest xmlns:com="http://roskazna.ru/gisgmp/xsd/Common/2.2.0" xmlns:nc="http://roskazna.ru/gisgmp/xsd/NoticeCharge/2.2.0" xmlns:pmnt="http://roskazna.ru/gisgmp/xsd/Payment/2.2.0" xmlns:org="http://roskazna.ru/gisgmp/xsd/Organization/2.2.0" Id="G_c26e88cb-3a4f-4a36-81af-17ffcccfe16e" timestamp="2020-09-30T19:44:47.032+05:00" xmlns:nt="urn://roskazna.ru/gisgmp/xsd/services/ExportNotice/2.2.0">
+  <nt:Destination recipientIdentifier="3eb6e5">
+    <nt:RoutingCode>45382000</nt:RoutingCode>
+  </nt:Destination>
+  <nt:NoticePayment supplierBillID="88818012420345815071" purpose="test" amount="20" receiptDate="2020-09-30" kbk="88888880000000001140" oktmo="88888000" transKind="01" paymentId="10445252250000013009202061716434" paymentDate="2020-09-30T14:06:30.313+05:00">
+    <pmnt:PaymentOrg>
+      <org:Bank name="Отделение Московского банка ПАО Сбербанк" bik="044525225" />
+    </pmnt:PaymentOrg>
+    <org:Payee name="АН 1роль" inn="8888888004" kpp="888888800">
+      <com:OrgAccount accountNumber="03252643000000079500">
+        <com:Bank bik="024501901" correspondentBankAccount="40102810045370000002" />
+      </com:OrgAccount>
+    </org:Payee>
+    <pmnt:BudgetIndex status="24" paytReason="0" taxPeriod="0" taxDocNumber="0" taxDocDate="0" />
+    <com:ChangeStatusInfo>
+      <com:Meaning>1</com:Meaning>
+    </com:ChangeStatusInfo>
+  </nt:NoticePayment>
+</nt:ExportNoticeRequest>

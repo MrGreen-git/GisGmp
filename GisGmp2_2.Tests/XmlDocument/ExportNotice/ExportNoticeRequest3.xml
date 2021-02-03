@@ -1,0 +1,6 @@
+<nt:ExportNoticeRequest xmlns:com="http://roskazna.ru/gisgmp/xsd/Common/2.2.0" xmlns:nc="http://roskazna.ru/gisgmp/xsd/NoticeCharge/2.2.0" xmlns:pmnt="http://roskazna.ru/gisgmp/xsd/Payment/2.2.0" xmlns:org="http://roskazna.ru/gisgmp/xsd/Organization/2.2.0" Id="G_554d04cb-5be6-4372-be84-2ffbfbc42264" timestamp="2020-09-30T19:27:15.425+05:00" xmlns:nt="urn://roskazna.ru/gisgmp/xsd/services/ExportNotice/2.2.0">
+  <nt:Destination recipientIdentifier="3eb6e5">
+    <nt:RoutingCode>45382000</nt:RoutingCode>
+  </nt:Destination>
+  <nt:NoticeQuittance supplierBillID="88818012420345815071" totalAmount="5000" creationDate="2020-09-30T19:26:49+05:00" billStatus="2" balance="4940" paymentId="10445252250000013009202061716434" amountPayment="60" isRevoked="false" />
+</nt:ExportNoticeRequest>

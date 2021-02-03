@@ -1,0 +1,4 @@
+<ns0:ExportNoticeNSIResponse xmlns:com="http://roskazna.ru/gisgmp/xsd/Common/2.2.0" xmlns:cn="http://roskazna.ru/gisgmp/xsd/Common-nsi/2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="G_4a2c00d9-f3f8-48e9-a6d9-3e9da1c87081" RqId="G_554d04cb-5be6-4372-be84-2ffbfbc42264" recipientIdentifier="3637ed" timestamp="2020-06-04T12:14:52.685+05:00" xmlns:ns0="urn://roskazna.ru/gisgmp/xsd/services/ExportNoticeNSI/2.2.0">
+  <ns0:RoutingCode>45382000</ns0:RoutingCode>
+  <ns0:ExportNoticeNSIConfirmation>true</ns0:ExportNoticeNSIConfirmation>
+</ns0:ExportNoticeNSIResponse>

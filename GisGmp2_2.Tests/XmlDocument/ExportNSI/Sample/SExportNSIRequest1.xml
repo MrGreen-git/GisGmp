@@ -1,0 +1,10 @@
+<nsi:ExportNSIRequest xmlns:cn="http://roskazna.ru/gisgmp/xsd/Common-nsi/2.2.0"
+    xmlns:com="http://roskazna.ru/gisgmp/xsd/Common/2.2.0"
+    xmlns:nsi="urn://roskazna.ru/gisgmp/xsd/services/export-nsi/2.2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ Id="G_cfe0c598-b35d-34bc-28d8-697f21d9e251" timestamp="2020-06-12T10:18:43.684+05:00" senderIdentifier="3637ed"
+     senderRole="7">
+    <nsi:NSIExportConditions>
+        <nsi:PayeeData inn="7705401341" kpp="770542151"/>
+    </nsi:NSIExportConditions>
+</nsi:ExportNSIRequest>

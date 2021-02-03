@@ -1,0 +1,3 @@
+<fa:ForcedAcknowledgementResponse xmlns:qt="http://roskazna.ru/gisgmp/xsd/Quittance/2.2.0" Id="G_52858add-199d-4d20-b1de-ed324630232a" RqId="G_e5c906a5-0ceb-4320-97e5-233f32dd8925" recipientIdentifier="3eb551" timestamp="2020-09-30T18:14:21" xmlns:fa="urn://roskazna.ru/gisgmp/xsd/services/forced-ackmowledgement/2.2.0">
+  <fa:Quittance supplierBillID="18817072711544879499" totalAmount="50000" creationDate="2020-09-30T18:13:56.284+05:00" billStatus="5" balance="0" paymentId="10471020010005233009202000000001" amountPayment="50000" />
+</fa:ForcedAcknowledgementResponse>

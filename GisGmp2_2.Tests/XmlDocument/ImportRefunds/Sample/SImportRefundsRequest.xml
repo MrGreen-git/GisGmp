@@ -1,0 +1,14 @@
+<ns0:ImportRefundsRequest xmlns:com="http://roskazna.ru/gisgmp/xsd/Common/2.2.0" xmlns:pkg="http://roskazna.ru/gisgmp/xsd/Package/2.2.0" xmlns:org="http://roskazna.ru/gisgmp/xsd/Organization/2.2.0" xmlns:chg="http://roskazna.ru/gisgmp/xsd/Charge/2.2.0" xmlns:pmnt="http://roskazna.ru/gisgmp/xsd/Payment/2.2.0" xmlns:rfnd="http://roskazna.ru/gisgmp/xsd/Refund/2.2.0" xmlns:ns0="urn://roskazna.ru/gisgmp/xsd/services/import-refunds/2.2.0" Id="I_07d5a0d1-5183-4efc-86a8-93b4d341872c" timestamp="2020-09-30T18:13:51" senderIdentifier="3eb551" senderRole="3">
+	<pkg:RefundsPackage>
+		<pkg:ImportedRefund Id="I_46488813-8080-49f4-b60f-7f87af897c6a" refundId="0410964930092020000000001" refundDocDate="2020-09-30T14:06:30.313+05:00" budgetLevel="1" kbk="18811630020016000140" oktmo="45381000">
+			<org:RefundPayer codeUBP="28519" name="Тестовый участник" inn="7706012716" kpp="770901011"/>
+			<rfnd:RefundApplication appNum="256894" appDate="2020-09-30" paymentId="10471020010005233009202000000012" cashType="1" amount="50000" purpose="Штраф за нарушение ПДД.Управление транспортным средством с нечитаемыми государственными регистрационными знаками"/>
+			<rfnd:RefundBasis docKind="Заявление" docNumber="235" docDate="2020-09-30"/>
+			<rfnd:RefundPayee payerIdentifier="1220000000007712579832" name="Тестовый получатель">
+				<rfnd:BankAccountNumber>
+					<com:Bank bik="044552272" correspondentBankAccount="30101810800000010022"/>
+				</rfnd:BankAccountNumber>
+			</rfnd:RefundPayee>
+		</pkg:ImportedRefund>
+	</pkg:RefundsPackage>
+</ns0:ImportRefundsRequest>

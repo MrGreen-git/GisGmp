@@ -1,0 +1,8 @@
+<ns0:ExportRefundsRequest xmlns:com="http://roskazna.ru/gisgmp/xsd/Common/2.2.0" xmlns:sc="http://roskazna.ru/gisgmp/xsd/SearchConditions/2.2.0" xmlns:org="http://roskazna.ru/gisgmp/xsd/Organization/2.2.0" xmlns:rfd="http://roskazna.ru/gisgmp/xsd/Refund/2.2.0" Id="G_98c04cf8-d42a-4b60-a288-b62d86f4dba5" timestamp="2020-09-30T18:13:51" senderIdentifier="3eb551" senderRole="3" xmlns:ns0="urn://roskazna.ru/gisgmp/xsd/services/export-refunds/2.2.0">
+  <com:Paging pageNumber="1" pageLength="100" />
+  <sc:RefundsExportConditions kind="REFUND">
+    <sc:PaymentsConditions>
+      <sc:PaymentId>10471020010005233009202000000012</sc:PaymentId>
+    </sc:PaymentsConditions>
+  </sc:RefundsExportConditions>
+</ns0:ExportRefundsRequest>

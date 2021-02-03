@@ -1,0 +1,8 @@
+<ns0:ExportNoticeNSIRequest xmlns:com="http://roskazna.ru/gisgmp/xsd/Common/2.2.0" xmlns:cn="http://roskazna.ru/gisgmp/xsd/Common-nsi/2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="G_30c7731b-739d-47bd-befd-86b50e800803" timestamp="2020-06-04T12:13:51.621+05:00" xmlns:ns0="urn://roskazna.ru/gisgmp/xsd/services/ExportNoticeNSI/2.2.0">
+  <ns0:Destination recipientIdentifier="3637ed">
+    <ns0:RoutingCode>45382000</ns0:RoutingCode>
+  </ns0:Destination>
+  <ns0:NoticeNSI directoryCode="UBP" signAttachment="false">
+    <ns0:PayeeNSIInfo name="ФГБУ «ФКП Росреестра» по г Москва (Тестовые данные!)" inn="7705401341" kpp="770542151" OrgStatus="1" changeDate="2020-06-04T12:10:51" />
+  </ns0:NoticeNSI>
+</ns0:ExportNoticeNSIRequest>

@@ -1,0 +1,15 @@
+<ns0:SubscriptionServiceResponse
+	xmlns:ns0="urn://roskazna.ru/gisgmp/xsd/services/SubscriptionService/2.2.0"
+	xmlns:com="http://roskazna.ru/gisgmp/xsd/Common/2.2.0"
+	xmlns:sub="http://roskazna.ru/gisgmp/xsd/Subscription/2.2.0"
+	Id="U_49655ef1-07fe-41f9-9538-c1bcdffb2b95" RqId="G_5e8e6ede-db3a-4fd4-af74-4e76268368b0"
+	recipientIdentifier="000009" timestamp="2020-09-30T16:04:25.932+05:00">
+	<ns0:Subscriptions subscriptionCode="NC0001"
+		subscriptionName="Уведомления о начислениях по определенным значениям идентификатора плательщика (ТЕСТОВЫЕ ДАННЫЕ!)"
+		subscriptionOperation="Уведомления о поступлении извещения о начислении (ТЕСТОВЫЕ ДАННЫЕ!)">
+		<ns0:SubscriptionParameter parameterCode="payerIdentifier"
+			parameterName="Идентификатор плательщика"
+			parameterPattern="(1((0[1-9])|(1[0-5])|(2[12456789])|(3[0]))[0-9a-zA-Zа-яА-Я]{19})|(200\d{14}[A-Z0-9]{2}\d{3})|(300\d{14}[A-Z0-9]{2}\d{3}|3[0]{7}\d{9}[A-Z0-9]{2}\d{3})|(4[0]{9}\d{12})"
+			required="true"/>
+	</ns0:Subscriptions>
+</ns0:SubscriptionServiceResponse>

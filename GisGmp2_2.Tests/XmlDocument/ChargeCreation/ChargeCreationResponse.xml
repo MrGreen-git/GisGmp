@@ -1,0 +1,15 @@
+<req:ChargeCreationResponse xmlns:com="http://roskazna.ru/gisgmp/xsd/Common/2.2.0" xmlns:chg="http://roskazna.ru/gisgmp/xsd/Charge/2.2.0" xmlns:org="http://roskazna.ru/gisgmp/xsd/Organization/2.2.0" Id="ID000000000000000000000000000001" RqId="I_cf64ff59-fba3-49b5-977e-eeb035d012a3" recipientIdentifier="3eb715" timestamp="2020-09-30T18:14:29.337+05:00" xmlns:req="urn://roskazna.ru/gisgmp/xsd/services/import-chargestemplate/2.2.0">
+  <req:Charge supplierBillID="0355431000000000011629713" billDate="2020-09-30T14:06:30.313+05:00" totalAmount="200000" purpose="Выдача национального водительского удостоверения на пластиковой основе (ТЕСТОВЫЕ ДАННЫЕ!)" kbk="18810807141011000110" oktmo="45381000" origin="TEMP">
+    <org:Payee name="Министерство внутренних дел Российской Федерации" inn="7706074737" kpp="770601001">
+      <com:OrgAccount accountNumber="03100643000000019500">
+        <com:Bank name="ОПЕРАЦИОННЫЙ ДЕПАРТАМЕНТ БАНКА РОССИИ//Межрегиональное операционное управление Федерального казначейства г. Москва" bik="024501901" correspondentBankAccount="40102810045370000002" />
+      </com:OrgAccount>
+    </org:Payee>
+    <chg:Payer payerIdentifier="1240000000000431133252" payerName="Тестовый плательщик" />
+    <chg:BudgetIndex status="01" paytReason="0" taxPeriod="0" taxDocNumber="01" taxDocDate="0" />
+    <com:MultiplierSize>
+      <com:Value>0.7</com:Value>
+      <com:Expiry>0</com:Expiry>
+    </com:MultiplierSize>
+  </req:Charge>
+</req:ChargeCreationResponse>

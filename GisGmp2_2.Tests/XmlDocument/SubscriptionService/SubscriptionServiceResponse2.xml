@@ -1,0 +1,5 @@
+<ns0:SubscriptionServiceResponse xmlns:sub="http://roskazna.ru/gisgmp/xsd/Subscription/2.2.0" xmlns:com="http://roskazna.ru/gisgmp/xsd/Common/2.2.0" Id="G_3df3e555-1dcd-48e1-8483-bb358a128b38" RqId="U_7994af15-f7f2-4a10-a055-5aacf6057d4f" recipientIdentifier="000009" timestamp="2020-09-30T16:04:25.932+05:00" xmlns:ns0="urn://roskazna.ru/gisgmp/xsd/services/SubscriptionService/2.2.0">
+  <ns0:CreateSubscriptionResult dispatchDate="2020-09-30T16:03:52.932+05:00" subscriptionCode="NC0001" subscriptionIdentifier="000009NC0001">
+    <ns0:SubscriptionProtocol parameterId="P_e5792842-b9b1-4515-859f-a309afeaa9d7" code="0" description="Успешно (ТЕСТОВЫЕ ДАННЫЕ!)" />
+  </ns0:CreateSubscriptionResult>
+</ns0:SubscriptionServiceResponse>
